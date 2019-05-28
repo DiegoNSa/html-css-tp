@@ -117,7 +117,7 @@
     <img src="tiramisu.jpg" alt="une image de mon tiramisu">
 
     <h2 class="imageH2">
-      Ingrédients (pour ~10 verrines)
+      Ingrédients (pour ~<span data-value="10">10</span> verrines)
     </h2>
 
     <ul>
@@ -179,11 +179,24 @@
         if(!isNaN(parseInt(event.target.value))  && parseInt(event.target.value) > 0) {
           spanList.forEach(function(span) {
               console.log(span);
-
               span.innerHTML = parseInt(event.target.value) * parseInt(span.getAttribute("data-value"));
           })
         }
       });
     })();
+
+    /* //---------------Correction
+    (function(){
+        function updateQuantity(){
+          spanList.forEach(function(spanElement) {
+              spanElement.innerHTML = parseInt(event.target.value) * parseInt(spanElement.getAttribute("data-value"));
+          })
+        }
+        const inputElement = document.querySelector("input")
+        const spanElementList = Array.from(document.querySelector("[data-value]"))
+        inputElement.addEventListener('input',updateQuantity)
+        updateQuantity()
+    })
+    */
   </script>
 </body>
