@@ -1,0 +1,158 @@
+body {
+  background-color: #FBF8FB;
+  color : #292728;
+  font-family: 'Asap', sans-serif;
+}
+
+
+  .menu{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    border-style:  hidden hidden solid;
+    border-color: #EFEFEE;
+    color: #9E999C;
+    background-color: white;
+  }
+
+  .titre{
+      padding-bottom: 40px;
+      font-size: 40px;
+      margin: 0;
+      font-weight: normal;
+  }
+
+
+  .carte{
+    border-style: solid;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px 40px;
+    display: flex;
+    border-color: #EFEFEE;
+    margin-bottom: 20px;
+  }
+
+  .sousTitre{
+    margin: 0;
+    font-size: 20px;
+    color :#B4B4B4;
+    font-weight: normal;
+  }
+
+.entete{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.logo{
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: row;
+}
+
+.roundLogo{
+  position : relative;
+  width: 50px;
+  height: 50px;
+  margin-right: 16px;
+}
+
+.roundLogo__image{
+  width: 50px;
+  border-radius: 50%;
+}
+
+.profil{
+  padding: 20px 40px;
+  border-color: #EFEFEE;
+  display: flex;
+  flex-direction: row;
+  border-style:  hidden hidden hidden solid;
+}
+
+.main{
+  padding-left: 20px;
+  padding-right: 20px;
+  margin :auto;
+  max-width: 800px;
+}
+
+.carte__icone{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #E5EFF5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.carte__icone--odd{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #FEE0DF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.carte__image{
+  width: 50px;
+  margin: auto;
+}
+
+.bulle{
+  color: white;
+  width: 24px;
+  height: 24px;
+  background-color: #026AD1;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -8px;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carte__text{}
+
+.carte__titre{
+  font-size: 32px;
+  margin-bottom: 8px;
+  font-weight: normal;
+}
+
+@media(max-width: 600px){
+  .menu{
+    flex-direction: column-reverse;
+  }
+  .carte{
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .sousTitre{
+    text-align : center;
+  }
+  .titre{
+      text-align : center;
+  }
+
+  .carte__titre{
+    text-align: center;
+  }
+
+  .carte__icone{
+      margin-bottom: 20px;
+  }
+
+  .carte__icone--odd{
+      margin-bottom: 20px;
+  }
+}
